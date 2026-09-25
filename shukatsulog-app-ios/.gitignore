@@ -1,0 +1,42 @@
+# Xcode user settings
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# Xcode build
+build/
+Build/
+DerivedData/
+*.xcarchive
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcresult
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Keep dependency lock file
+!Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Swift tools
+.swiftlint-cache/
+.swiftformat-cache/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
