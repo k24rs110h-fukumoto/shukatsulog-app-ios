@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		642EE35E306B71B70064E5B8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 642EE35D306B71B70064E5B8 /* .gitignore */; };
+		644714D7306B84B00051E8E5 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644714D6306B84B00051E8E5 /* Assets.swift */; };
 		64C5C553306B7AE40072D71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C5C552306B7AE40072D71A /* Assets.xcassets */; };
+		64C5C55F306B82860072D71A /* Image+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C5C555306B82860072D71A /* Image+Asset.swift */; };
+		64C5C563306B82A60072D71A /* Color+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C5C562306B82A10072D71A /* Color+Asset.swift */; };
+		64C5C565306B83990072D71A /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 64C5C564306B838C0072D71A /* swiftgen.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		642EE35D306B71B70064E5B8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		644714D6306B84B00051E8E5 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		64C5C552306B7AE40072D71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C5C554306B7B580072D71A /* shukatsulog-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shukatsulog-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C5C555306B82860072D71A /* Image+Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Asset.swift"; sourceTree = "<group>"; };
+		64C5C562306B82A10072D71A /* Color+Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Asset.swift"; sourceTree = "<group>"; };
+		64C5C564306B838C0072D71A /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,10 +46,46 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000010 /* App */,
+				64C5C55D306B82860072D71A /* Core */,
+				644714D4306B83FD0051E8E5 /* Resources */,
 				642EE35D306B71B70064E5B8 /* .gitignore */,
-				64C5C552306B7AE40072D71A /* Assets.xcassets */,
+				64C5C564306B838C0072D71A /* swiftgen.yml */,
 				64C5C554306B7B580072D71A /* shukatsulog-app-ios.app */,
 			);
+			sourceTree = "<group>";
+		};
+		644714D4306B83FD0051E8E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64C5C552306B7AE40072D71A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		644714D5306B84950051E8E5 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				644714D6306B84B00051E8E5 /* Assets.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		64C5C556306B82860072D71A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64C5C562306B82A10072D71A /* Color+Asset.swift */,
+				64C5C555306B82860072D71A /* Image+Asset.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64C5C55D306B82860072D71A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				64C5C556306B82860072D71A /* Extensions */,
+				644714D5306B84950051E8E5 /* Generated */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +149,7 @@
 			files = (
 				64C5C553306B7AE40072D71A /* Assets.xcassets in Resources */,
 				642EE35E306B71B70064E5B8 /* .gitignore in Resources */,
+				64C5C565306B83990072D71A /* swiftgen.yml in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -113,6 +158,9 @@
 		000000000000000120000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				64C5C563306B82A60072D71A /* Color+Asset.swift in Sources */,
+				644714D7306B84B00051E8E5 /* Assets.swift in Sources */,
+				64C5C55F306B82860072D71A /* Image+Asset.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
