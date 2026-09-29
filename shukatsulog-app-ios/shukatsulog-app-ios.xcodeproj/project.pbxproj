@@ -13,6 +13,7 @@
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* shukatsulog-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shukatsulog-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		642EE35D306B71B70064E5B8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		64C5C54F306B75730072D71A /* HomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -36,6 +37,7 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000010 /* App */,
+				64C5C54C306B75550072D71A /* Feature */,
 				642EE35D306B71B70064E5B8 /* .gitignore */,
 				000000000000000000000020 /* Products */,
 			);
@@ -47,6 +49,22 @@
 				000000000000000000000120 /* shukatsulog-app-ios.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		64C5C54C306B75550072D71A /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				64C5C54D306B755F0072D71A /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		64C5C54D306B755F0072D71A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				64C5C54F306B75730072D71A /* HomeTopView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
