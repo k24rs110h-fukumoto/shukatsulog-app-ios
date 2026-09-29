@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		648C237830664D6B0058E77C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 648C237730664D5F0058E77C /* .gitignore */; };
+		642EE35E306B71B70064E5B8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 642EE35D306B71B70064E5B8 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* shukatsulog-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shukatsulog-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		648C237730664D5F0058E77C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		642EE35D306B71B70064E5B8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		000000000000000000000010 /* shukatsulog-app-ios */ = {
+		000000000000000000000010 /* App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "shukatsulog-app-ios";
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -35,8 +35,8 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				648C237730664D5F0058E77C /* .gitignore */,
-				000000000000000000000010 /* shukatsulog-app-ios */,
+				000000000000000000000010 /* App */,
+				642EE35D306B71B70064E5B8 /* .gitignore */,
 				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +63,7 @@
 			buildRules = (
 			);
 			fileSystemSynchronizedGroups = (
-				000000000000000000000010 /* shukatsulog-app-ios */,
+				000000000000000000000010 /* App */,
 			);
 			name = "shukatsulog-app-ios";
 			productName = MyApp;
@@ -108,7 +108,7 @@
 		000000000000000140000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				648C237830664D6B0058E77C /* .gitignore in Resources */,
+				642EE35E306B71B70064E5B8 /* .gitignore in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
