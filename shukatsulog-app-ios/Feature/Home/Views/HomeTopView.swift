@@ -11,6 +11,7 @@ struct HomeTopView: View {
     var body: some View {
         NavigationStack {
             content
+                .background(Color(Asset.Color.Background.background.color))
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         Button {
@@ -25,7 +26,7 @@ struct HomeTopView: View {
                         Button {
                             
                         } label: {
-                            Text("ホーム")
+                            Text("就活ログ")
                         }
                     }
                     
@@ -43,14 +44,32 @@ struct HomeTopView: View {
     
     private var content: some View {
         ScrollView {
-            
+            TodayTask
         }
     }
     
     private var TodayTask: some View {
         VStack {
+            HStack {
+                Text("0:00~0:00")
+                
+                Spacer()
+                
+                
+                
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Web面接")
+                        
+                        Text("株式会社田中研究所")
+                    }
+                    Text("〄Zoom")
+                }
+            }
             
         }
+        .background(Color(Asset.Color.Background.card.color))
+        .padding(.horizontal)
     }
 }
 
