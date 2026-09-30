@@ -39,12 +39,16 @@ struct UpcomingScheduleScreen: View {
                     .fontWeight(.semibold)
                 
                 HStack {
-                    Text(date, format: .dateTime.month(.wide).day().hour().minute())
+                    Text(
+                        date.formatted(.dateTime.locale(Locale(identifier: "ja_JP")) // TODO: 言語設定は後々修正
+                                .month(.wide).day().hour().minute()))
                         .foregroundStyle(.secondary)
+                        .font(.caption)
                     
                     Spacer()
                     
                     Text(title)
+                        .font(.caption)
                         .foregroundStyle(.secondary)
                 }
             }
