@@ -24,44 +24,50 @@ struct UpcomingScheduleScreen: View {
         .background(Color(Asset.Color.Background.card.color))
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .padding(.horizontal, 16)
+        .padding(.vertical, 8)
     }
     
     private func upcommingScheduleRow(date: Date, title: String, company: String, status: String) -> some View {
-        HStack(alignment: .top, spacing: 16) {
-            Image(uiImage: Asset.TabBar.business.image)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 32, height: 32)
+        Button {
             
-            VStack(alignment: .leading) {
-                Text(company)
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
+        } label: {
+            HStack(alignment: .top, spacing: 16) {
+                Image(uiImage: Asset.TabBar.business.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 32, height: 32)
                 
-                HStack {
-                    Text(
-                        date.formatted(.dateTime.locale(Locale(identifier: "ja_JP")) // TODO: 言語設定は後々修正
+                VStack(alignment: .leading) {
+                    Text(company)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Color(Asset.Color.Text.textPrimary.color))
+                    
+                    HStack {
+                        Text(
+                            date.formatted(.dateTime.locale(Locale(identifier: "ja_JP")) // TODO: 言語設定は後々修正
                                 .month(.wide).day().hour().minute()))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Color(Asset.Color.Text.textSecondary.color))
                         .font(.caption)
-                    
-                    Spacer()
-                    
-                    Text(title)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+                        
+                        Spacer()
+                        
+                        Text(title)
+                            .font(.caption)
+                            .foregroundStyle(Color(Asset.Color.Text.textSecondary.color))
+                    }
                 }
+                
+                Text(status)
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
+                    .background(.blue)
+                    .clipShape(Capsule())
             }
-            
-            Text(status)
-                .font(.caption)
-                .fontWeight(.semibold)
-                .foregroundStyle(.white)
-                .padding(.horizontal, 10)
-                .padding(.vertical, 6)
-                .background(.blue)
-                .clipShape(Capsule())
+            .padding(.vertical, 12)
         }
-        .padding(.vertical, 12)
     }
 }

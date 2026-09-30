@@ -19,6 +19,7 @@ struct ToDoListScreen: View {
         .background(Color(Asset.Color.Background.card.color))
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .padding(.horizontal, 16)
+        .padding(.vertical, 8)
     }
     
     private func toDoListRow(title: String, limitDate: String) -> some View {
