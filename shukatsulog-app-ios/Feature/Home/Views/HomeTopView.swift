@@ -38,12 +38,6 @@ struct HomeTopView: View {
                     }
                     .sharedBackgroundVisibility(.hidden)
                 }
-            
-            TabView {
-                Tab("Home", systemImage: "Home") {
-                    
-                }
-            }
         }
     }
     
