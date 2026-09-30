@@ -12,32 +12,8 @@ struct HomeTopView: View {
         NavigationStack {
             content
                 .background(Color(Asset.Color.Background.background.color))
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "line.3.horizontal.decrease")
-                        }
-                    }
-                    .sharedBackgroundVisibility(.hidden)
-                    
-                    ToolbarItem(placement: .principal) {
-                        Button {
-                            
-                        } label: {
-                            Text("就活ログ")
-                        }
-                    }
-                    
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "bell")
-                        }
-                    }
-                    .sharedBackgroundVisibility(.hidden)
+                .safeAreaInset(edge: .top){
+                    AppHeaderView()
                 }
         }
     }
