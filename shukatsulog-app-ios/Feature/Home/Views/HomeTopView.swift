@@ -44,33 +44,13 @@ struct HomeTopView: View {
     
     private var content: some View {
         ScrollView {
-            TodayTask
+            TodayTaskScreen()
+            
+            UpcomingScheduleScreen()
         }
     }
     
-    private var TodayTask: some View {
-        VStack {
-            HStack {
-                Text("0:00~0:00")
-                
-                Spacer()
-                
-                
-                
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("Web面接")
-                        
-                        Text("株式会社田中研究所")
-                    }
-                    Text("〄Zoom")
-                }
-            }
-            
-        }
-        .background(Color(Asset.Color.Background.card.color))
-        .padding(.horizontal)
-    }
+    
 }
 
 
