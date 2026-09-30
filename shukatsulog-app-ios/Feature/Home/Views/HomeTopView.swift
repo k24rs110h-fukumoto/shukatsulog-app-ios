@@ -47,6 +47,8 @@ struct HomeTopView: View {
             TodayTaskScreen()
             
             UpcomingScheduleScreen()
+            
+            ToDoListScreen()
         }
     }
     
