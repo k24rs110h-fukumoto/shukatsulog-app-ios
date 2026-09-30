@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		642EE35E306B71B70064E5B8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 642EE35D306B71B70064E5B8 /* .gitignore */; };
 		644714D7306B84B00051E8E5 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644714D6306B84B00051E8E5 /* Assets.swift */; };
+		644714F5306CAE730051E8E5 /* HomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644714F4306CAE610051E8E5 /* HomeTopView.swift */; };
+		644714FC306CEB870051E8E5 /* TodayTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644714FB306CEB7D0051E8E5 /* TodayTaskScreen.swift */; };
+		644714FE306CEE860051E8E5 /* UpcomingScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644714FD306CEE7E0051E8E5 /* UpcomingScheduleScreen.swift */; };
+		64471500306CF3AA0051E8E5 /* ToDoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644714FF306CF3A30051E8E5 /* ToDoListScreen.swift */; };
+		64471508306CFA330051E8E5 /* QuickActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64471507306CFA2E0051E8E5 /* QuickActionButton.swift */; };
+		6447150B306CFBC10051E8E5 /* QuickActionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447150A306CFBB50051E8E5 /* QuickActionData.swift */; };
+		6447150D306CFC3B0051E8E5 /* QuickActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447150C306CFC290051E8E5 /* QuickActionItem.swift */; };
 		64C5C553306B7AE40072D71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C5C552306B7AE40072D71A /* Assets.xcassets */; };
 		64C5C55F306B82860072D71A /* Image+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C5C555306B82860072D71A /* Image+Asset.swift */; };
 		64C5C563306B82A60072D71A /* Color+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C5C562306B82A10072D71A /* Color+Asset.swift */; };
@@ -18,6 +25,13 @@
 /* Begin PBXFileReference section */
 		642EE35D306B71B70064E5B8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		644714D6306B84B00051E8E5 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		644714F4306CAE610051E8E5 /* HomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopView.swift; sourceTree = "<group>"; };
+		644714FB306CEB7D0051E8E5 /* TodayTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTaskScreen.swift; sourceTree = "<group>"; };
+		644714FD306CEE7E0051E8E5 /* UpcomingScheduleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingScheduleScreen.swift; sourceTree = "<group>"; };
+		644714FF306CF3A30051E8E5 /* ToDoListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListScreen.swift; sourceTree = "<group>"; };
+		64471507306CFA2E0051E8E5 /* QuickActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionButton.swift; sourceTree = "<group>"; };
+		6447150A306CFBB50051E8E5 /* QuickActionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionData.swift; sourceTree = "<group>"; };
+		6447150C306CFC290051E8E5 /* QuickActionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionItem.swift; sourceTree = "<group>"; };
 		64C5C552306B7AE40072D71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C5C554306B7B580072D71A /* shukatsulog-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shukatsulog-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C5C555306B82860072D71A /* Image+Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Asset.swift"; sourceTree = "<group>"; };
@@ -47,6 +61,7 @@
 			children = (
 				000000000000000000000010 /* App */,
 				64C5C55D306B82860072D71A /* Core */,
+				644714F2306CADB10051E8E5 /* Feature */,
 				644714D4306B83FD0051E8E5 /* Resources */,
 				642EE35D306B71B70064E5B8 /* .gitignore */,
 				64C5C564306B838C0072D71A /* swiftgen.yml */,
@@ -68,6 +83,52 @@
 				644714D6306B84B00051E8E5 /* Assets.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		644714F1306CADB10051E8E5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				64471509306CFBA70051E8E5 /* QuickActionButton */,
+				644714FA306CEB720051E8E5 /* Components */,
+				644714F3306CAE5B0051E8E5 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		644714F2306CADB10051E8E5 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				644714F1306CADB10051E8E5 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		644714F3306CAE5B0051E8E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				644714F4306CAE610051E8E5 /* HomeTopView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		644714FA306CEB720051E8E5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				644714FF306CF3A30051E8E5 /* ToDoListScreen.swift */,
+				644714FD306CEE7E0051E8E5 /* UpcomingScheduleScreen.swift */,
+				644714FB306CEB7D0051E8E5 /* TodayTaskScreen.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		64471509306CFBA70051E8E5 /* QuickActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				6447150C306CFC290051E8E5 /* QuickActionItem.swift */,
+				6447150A306CFBB50051E8E5 /* QuickActionData.swift */,
+				64471507306CFA2E0051E8E5 /* QuickActionButton.swift */,
+			);
+			path = QuickActionButton;
 			sourceTree = "<group>";
 		};
 		64C5C556306B82860072D71A /* Extensions */ = {
@@ -158,7 +219,14 @@
 		000000000000000120000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				644714FE306CEE860051E8E5 /* UpcomingScheduleScreen.swift in Sources */,
+				64471500306CF3AA0051E8E5 /* ToDoListScreen.swift in Sources */,
+				6447150D306CFC3B0051E8E5 /* QuickActionItem.swift in Sources */,
 				64C5C563306B82A60072D71A /* Color+Asset.swift in Sources */,
+				64471508306CFA330051E8E5 /* QuickActionButton.swift in Sources */,
+				6447150B306CFBC10051E8E5 /* QuickActionData.swift in Sources */,
+				644714F5306CAE730051E8E5 /* HomeTopView.swift in Sources */,
+				644714FC306CEB870051E8E5 /* TodayTaskScreen.swift in Sources */,
 				644714D7306B84B00051E8E5 /* Assets.swift in Sources */,
 				64C5C55F306B82860072D71A /* Image+Asset.swift in Sources */,
 			);
@@ -301,7 +369,7 @@
 		000000000000000111000000 /* Debug configuration for PBXNativeTarget "shukatsulog-app-ios" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -341,7 +409,7 @@
 		000000000000000112000000 /* Release configuration for PBXNativeTarget "shukatsulog-app-ios" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
