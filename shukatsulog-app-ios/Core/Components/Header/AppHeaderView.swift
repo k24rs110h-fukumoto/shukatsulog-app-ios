@@ -16,6 +16,7 @@ struct AppHeaderView: View {
                 Image(systemName: "line.3.horizontal")
                     .resizable()
                     .scaledToFit()
+                    .foregroundStyle(Color(Asset.Color.Text.textPrimary.color))
                     .frame(width: 32, height: 32)
             }
             
@@ -38,6 +39,7 @@ struct AppHeaderView: View {
                 Image(systemName: "bell")
                     .resizable()
                     .scaledToFit()
+                    .foregroundStyle(Color(Asset.Color.Text.textPrimary.color))
                     .frame(width: 32, height: 32)
             }
         }

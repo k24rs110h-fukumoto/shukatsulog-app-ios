@@ -32,7 +32,7 @@ struct UpcomingScheduleScreen: View {
             
         } label: {
             HStack(alignment: .top, spacing: 16) {
-                Image(uiImage: Asset.TabBar.business.image)
+                Image(systemName: "building")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
