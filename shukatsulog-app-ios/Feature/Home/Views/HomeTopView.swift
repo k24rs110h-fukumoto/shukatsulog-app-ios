@@ -15,9 +15,6 @@ struct HomeTopView: View {
                 .safeAreaInset(edge: .top) {
                     AppHeaderView()
                 }
-                .safeAreaInset(edge: .bottom) {
-                    AppTabBarView()
-                }
         }
     }
     
@@ -41,7 +38,3 @@ struct HomeTopView: View {
     
 }
 
-
-#Preview {
-    HomeTopView()
-}

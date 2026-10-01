@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct AppTabBarView: View {
-    @State private var selectedTab: AppTab = .home
+    @Binding var selectedTab: AppTab
 
     var body: some View {
-        HStack(spacing: 0) {
+        HStack {
             tabButton(.home, "house", "ホーム")
             tabButton(.company, "building.2", "企業")
             tabButton(.schedule, "calendar", "予定")
