@@ -12,8 +12,11 @@ struct HomeTopView: View {
         NavigationStack {
             content
                 .background(Color(Asset.Color.Background.background.color))
-                .safeAreaInset(edge: .top){
+                .safeAreaInset(edge: .top) {
                     AppHeaderView()
+                }
+                .safeAreaInset(edge: .bottom) {
+                    AppTabBarView()
                 }
         }
     }
