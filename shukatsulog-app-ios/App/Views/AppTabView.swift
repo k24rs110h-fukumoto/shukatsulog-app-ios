@@ -1,5 +1,5 @@
 //
-//  MainTabView.swift
+//  AppTabView.swift
 //  shukatsulog-app-ios
 //
 //  Created by Haruto Fukumoto on 2026/10/01.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainTabView: View {
+struct AppTabView: View {
     @State private var selectedTab: AppTab = .home
 
     var body: some View {
@@ -15,7 +15,10 @@ struct MainTabView: View {
             tabContent
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
 
-            AppTabBarView(selectedTab: $selectedTab)
+            TabBarView(
+                tabs: AppTab.allCases,
+                selectedTab: $selectedTab
+            )
         }
     }
 

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TodayTaskScreen: View {
+struct TodayScheduleSection: View {
     var body: some View {
         VStack {
             todayTaskRow(time: "10:00~11:00", title: "Web面接", compony: "田中研究所")
