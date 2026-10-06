@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UpcomingScheduleScreen: View {
+struct UpcomingScheduleSection: View {
     var body: some View {
         VStack {
             upcommingScheduleRow(date: Calendar.current.date(from: DateComponents(year: 2026, month: 9, day: 20, hour: 16, minute:0))!, title: "1時面接", company: "株式会社田中研究所", status: "面接待機中")
