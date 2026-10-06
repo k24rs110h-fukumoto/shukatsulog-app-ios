@@ -64,13 +64,6 @@ internal enum Asset {
     internal static let bellUnAnnounced = ImageAsset(name: "Header/BellUnAnnounced")
     internal static let menu = ImageAsset(name: "Header/Menu")
   }
-  internal enum TabBar {
-    internal static let business = ImageAsset(name: "TabBar/Business")
-    internal static let home = ImageAsset(name: "TabBar/Home")
-    internal static let myPage = ImageAsset(name: "TabBar/MyPage")
-    internal static let schedule = ImageAsset(name: "TabBar/Schedule")
-    internal static let selection = ImageAsset(name: "TabBar/Selection")
-  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
