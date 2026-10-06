@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ToDoListScreen: View {
+struct ToDoListSection: View {
     var body: some View {
         VStack {
             toDoListRow(title: "株式会社田中研究所ES提出", limitDate: "今日")

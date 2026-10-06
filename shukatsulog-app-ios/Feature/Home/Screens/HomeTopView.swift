@@ -20,11 +20,11 @@ struct HomeTopView: View {
     
     private var content: some View {
         ScrollView {
-            TodayTaskScreen()
+            TodayScheduleSection()
             
-            UpcomingScheduleScreen()
+            UpcomingScheduleSection()
             
-            ToDoListScreen()
+            ToDoListSection()
             
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
                 QuickActionButton(QuickActionData.entryManagement, tapAction: {})

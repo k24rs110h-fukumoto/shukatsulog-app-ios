@@ -1,14 +1,14 @@
 import SwiftUI
 import Playgrounds
 
-@main struct MyApp: App {
+@main struct ShukatsuLogApp: App {
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            AppTabView()
         }
     }
 }
 
 #Preview {
-    MainTabView()
+    AppTabView()
 }

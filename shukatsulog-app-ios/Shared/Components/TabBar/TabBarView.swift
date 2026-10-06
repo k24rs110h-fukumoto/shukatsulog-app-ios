@@ -1,5 +1,5 @@
 //
-//  AppTabBar.swift
+//  TabBarView.swift
 //  shukatsulog-app-ios
 //
 //  Created by Haruto Fukumoto on 2026/09/29.
@@ -7,16 +7,15 @@
 
 import SwiftUI
 
-struct AppTabBarView: View {
+struct TabBarView: View {
+    let tabs: [AppTab]
     @Binding var selectedTab: AppTab
 
     var body: some View {
         HStack {
-            tabButton(.home, "house", "ホーム")
-            tabButton(.company, "building.2", "企業")
-            tabButton(.schedule, "calendar", "予定")
-            tabButton(.selection, "checklist", "選考")
-            tabButton(.profile, "person", "マイページ")
+            ForEach(tabs, id: \.self) { tab in
+                tabButton(tab)
+            }
         }
         .frame(maxWidth: .infinity)
         .background(Color(Asset.Color.TabBar.tabBackground.color))
@@ -26,20 +25,24 @@ struct AppTabBarView: View {
                 .foregroundStyle(Color(Asset.Color.TabBar.tabBorder.color))
         }
     }
-    
-    private func tabButton( _ tab: AppTab, _ icon: String, _ title: String) -> some View {
+
+    private func tabButton(_ tab: AppTab) -> some View {
         Button {
             selectedTab = tab
         } label: {
             VStack(spacing: 4) {
-                Image(systemName: icon)
+                Image(systemName: tab.icon)
                     .symbolVariant(selectedTab == tab ? .fill : .none)
                     .font(.system(size: 22))
 
-                Text(title)
+                Text(tab.title)
                     .font(.caption2)
             }
-            .foregroundStyle(selectedTab == tab ? Color(Asset.Color.TabBar.tabActive.color) : Color(Asset.Color.TabBar.tabInactive.color))
+            .foregroundStyle(
+                selectedTab == tab
+                    ? Color(Asset.Color.TabBar.tabActive.color)
+                    : Color(Asset.Color.TabBar.tabInactive.color)
+            )
             .frame(maxWidth: .infinity)
             .frame(height: 52)
             .contentShape(Rectangle())
@@ -47,4 +50,3 @@ struct AppTabBarView: View {
         .buttonStyle(.plain)
     }
 }
-
