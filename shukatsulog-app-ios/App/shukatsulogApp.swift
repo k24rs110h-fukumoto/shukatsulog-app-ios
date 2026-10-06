@@ -4,7 +4,11 @@ import Playgrounds
 @main struct MyApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeTopView()
+            MainTabView()
         }
     }
+}
+
+#Preview {
+    MainTabView()
 }
