@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeTopQuickActionSection: View {
+struct HomeTopQuickActionButtonSection: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 0) {
