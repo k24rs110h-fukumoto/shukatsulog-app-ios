@@ -59,6 +59,7 @@
 		64A934B13077891900A91CF2 /* WeeklyScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934B03077890D00A91CF2 /* WeeklyScheduleViewModel.swift */; };
 		64A934B33077892B00A91CF2 /* UpcomingScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934B23077892100A91CF2 /* UpcomingScheduleViewModel.swift */; };
 		64A934B53077894300A91CF2 /* TodayScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934B43077893800A91CF2 /* TodayScheduleViewModel.swift */; };
+		64A934B730778BFC00A91CF2 /* WeeklyScheduleListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934B630778BF000A91CF2 /* WeeklyScheduleListScreen.swift */; };
 		64C5C553306B7AE40072D71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C5C552306B7AE40072D71A /* Assets.xcassets */; };
 		64C5C55F306B82860072D71A /* Image+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C5C555306B82860072D71A /* Image+Asset.swift */; };
 		64C5C563306B82A60072D71A /* Color+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C5C562306B82A10072D71A /* Color+Asset.swift */; };
@@ -118,6 +119,7 @@
 		64A934B03077890D00A91CF2 /* WeeklyScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyScheduleViewModel.swift; sourceTree = "<group>"; };
 		64A934B23077892100A91CF2 /* UpcomingScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingScheduleViewModel.swift; sourceTree = "<group>"; };
 		64A934B43077893800A91CF2 /* TodayScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayScheduleViewModel.swift; sourceTree = "<group>"; };
+		64A934B630778BF000A91CF2 /* WeeklyScheduleListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyScheduleListScreen.swift; sourceTree = "<group>"; };
 		64C5C552306B7AE40072D71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C5C554306B7B580072D71A /* shukatsulog-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shukatsulog-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C5C555306B82860072D71A /* Image+Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Asset.swift"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 		64A934273075543600A91CF2 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				64A934B630778BF000A91CF2 /* WeeklyScheduleListScreen.swift */,
 				64A934A63077744400A91CF2 /* HomeTopQuickActionButtonSection.swift */,
 				644714FF306CF3A30051E8E5 /* ToDoListSection.swift */,
 				644714FD306CEE7E0051E8E5 /* UpcomingScheduleListSection.swift */,
@@ -675,6 +678,7 @@
 				64A934AD307784FB00A91CF2 /* WeeklyScheduleScreen.swift in Sources */,
 				64A9348D30774A1C00A91CF2 /* SelectionTopScreen.swift in Sources */,
 				64A93436307555FC00A91CF2 /* AppTabView.swift in Sources */,
+				64A934B730778BFC00A91CF2 /* WeeklyScheduleListScreen.swift in Sources */,
 				64A93437307555FC00A91CF2 /* ShukatsuLogApp.swift in Sources */,
 				64A934A130776ED000A91CF2 /* MyPageTopViewModel.swift in Sources */,
 				64A93481307749D100A91CF2 /* ScheduleTopScreen.swift in Sources */,
