@@ -55,6 +55,10 @@
 		64A934A9307784D500A91CF2 /* TodayScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934A8307784C300A91CF2 /* TodayScheduleScreen.swift */; };
 		64A934AB307784E800A91CF2 /* UpcomingScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934AA307784D800A91CF2 /* UpcomingScheduleScreen.swift */; };
 		64A934AD307784FB00A91CF2 /* WeeklyScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934AC307784EC00A91CF2 /* WeeklyScheduleScreen.swift */; };
+		64A934AF307788D500A91CF2 /* HomeTopRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934AE307788D000A91CF2 /* HomeTopRouter.swift */; };
+		64A934B13077891900A91CF2 /* WeeklyScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934B03077890D00A91CF2 /* WeeklyScheduleViewModel.swift */; };
+		64A934B33077892B00A91CF2 /* UpcomingScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934B23077892100A91CF2 /* UpcomingScheduleViewModel.swift */; };
+		64A934B53077894300A91CF2 /* TodayScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934B43077893800A91CF2 /* TodayScheduleViewModel.swift */; };
 		64C5C553306B7AE40072D71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C5C552306B7AE40072D71A /* Assets.xcassets */; };
 		64C5C55F306B82860072D71A /* Image+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C5C555306B82860072D71A /* Image+Asset.swift */; };
 		64C5C563306B82A60072D71A /* Color+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C5C562306B82A10072D71A /* Color+Asset.swift */; };
@@ -110,6 +114,10 @@
 		64A934A8307784C300A91CF2 /* TodayScheduleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayScheduleScreen.swift; sourceTree = "<group>"; };
 		64A934AA307784D800A91CF2 /* UpcomingScheduleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingScheduleScreen.swift; sourceTree = "<group>"; };
 		64A934AC307784EC00A91CF2 /* WeeklyScheduleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyScheduleScreen.swift; sourceTree = "<group>"; };
+		64A934AE307788D000A91CF2 /* HomeTopRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopRouter.swift; sourceTree = "<group>"; };
+		64A934B03077890D00A91CF2 /* WeeklyScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyScheduleViewModel.swift; sourceTree = "<group>"; };
+		64A934B23077892100A91CF2 /* UpcomingScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingScheduleViewModel.swift; sourceTree = "<group>"; };
+		64A934B43077893800A91CF2 /* TodayScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayScheduleViewModel.swift; sourceTree = "<group>"; };
 		64C5C552306B7AE40072D71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C5C554306B7B580072D71A /* shukatsulog-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shukatsulog-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C5C555306B82860072D71A /* Image+Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Asset.swift"; sourceTree = "<group>"; };
@@ -163,7 +171,7 @@
 				64A934263075542F00A91CF2 /* Screens */,
 				64A934273075543600A91CF2 /* Sections */,
 				644714FA306CEB720051E8E5 /* Components */,
-				644714F3306CAE5B0051E8E5 /* ViewsModels */,
+				644714F3306CAE5B0051E8E5 /* ViewModels */,
 				64A934283075553E00A91CF2 /* Navigation */,
 			);
 			path = Home;
@@ -181,12 +189,15 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		644714F3306CAE5B0051E8E5 /* ViewsModels */ = {
+		644714F3306CAE5B0051E8E5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				64A934B43077893800A91CF2 /* TodayScheduleViewModel.swift */,
+				64A934B23077892100A91CF2 /* UpcomingScheduleViewModel.swift */,
+				64A934B03077890D00A91CF2 /* WeeklyScheduleViewModel.swift */,
 				64A934703077494F00A91CF2 /* HomeTopViewModel.swift */,
 			);
-			path = ViewsModels;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		644714FA306CEB720051E8E5 /* Components */ = {
@@ -258,6 +269,7 @@
 		64A934283075553E00A91CF2 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				64A934AE307788D000A91CF2 /* HomeTopRouter.swift */,
 				64A934723077495C00A91CF2 /* HomeTopRoute.swift */,
 			);
 			path = Navigation;
@@ -657,6 +669,7 @@
 				64471500306CF3AA0051E8E5 /* ToDoListSection.swift in Sources */,
 				6447150D306CFC3B0051E8E5 /* QuickActionItem.swift in Sources */,
 				64A9347F307749B200A91CF2 /* CompanyTopRoute.swift in Sources */,
+				64A934B33077892B00A91CF2 /* UpcomingScheduleViewModel.swift in Sources */,
 				64A93485307749ED00A91CF2 /* ScheduleListSection.swift in Sources */,
 				64A934AB307784E800A91CF2 /* UpcomingScheduleScreen.swift in Sources */,
 				64A934AD307784FB00A91CF2 /* WeeklyScheduleScreen.swift in Sources */,
@@ -673,6 +686,8 @@
 				64471508306CFA330051E8E5 /* QuickActionButton.swift in Sources */,
 				64A934A330776ED900A91CF2 /* MyPageTopRoute.swift in Sources */,
 				64A934A9307784D500A91CF2 /* TodayScheduleScreen.swift in Sources */,
+				64A934B53077894300A91CF2 /* TodayScheduleViewModel.swift in Sources */,
+				64A934AF307788D500A91CF2 /* HomeTopRouter.swift in Sources */,
 				64A9348F30774A2C00A91CF2 /* SelectionCreateSheet.swift in Sources */,
 				64A9346F3077494C00A91CF2 /* HomeHeaderView.swift in Sources */,
 				64A934753077497500A91CF2 /* CompanyTopScreen.swift in Sources */,
@@ -687,6 +702,7 @@
 				64A9349530774A5100A91CF2 /* SelectionTopViewModel.swift in Sources */,
 				64A9349B30776D8600A91CF2 /* ProfiledEditSheet.swift in Sources */,
 				649D9CE0306D18730070CCA7 /* TabBarView.swift in Sources */,
+				64A934B13077891900A91CF2 /* WeeklyScheduleViewModel.swift in Sources */,
 				649D9CE1306D18730070CCA7 /* AppTab.swift in Sources */,
 				64A934793077498200A91CF2 /* CompanyBasicInfoSection.swift in Sources */,
 				64A9349930776D7B00A91CF2 /* MyPageTopScreen.swift in Sources */,
