@@ -21,25 +21,15 @@ struct QuickActionButton: View {
             VStack(spacing: 8) {
                 Image(systemName: item.image)
                     .font(.system(size: 24, weight: .semibold))
-                    .foregroundStyle(item.color)
+                    .foregroundStyle(Color(Asset.Color.Brand.primary.color))
 
                 Text(item.title)
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(.primary)
-                    .multilineTextAlignment(.center)
-
-                Text(item.description)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
-                    .lineLimit(2)
             }
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 16)
-            .padding(.horizontal, 10)
-            .background(item.color.opacity(0.05))
-            .clipShape(RoundedRectangle(cornerRadius: 14))
+            .padding(.vertical, 8)
         }
         .buttonStyle(.plain)
     }
