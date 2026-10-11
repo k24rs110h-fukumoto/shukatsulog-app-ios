@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		642EE35E306B71B70064E5B8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 642EE35D306B71B70064E5B8 /* .gitignore */; };
+		64306D413077C3C9001FCF54 /* AppPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64306D403077C3C7001FCF54 /* AppPresentation.swift */; };
+		64306D433077C4AE001FCF54 /* HomeTopRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64306D423077C4A7001FCF54 /* HomeTopRootView.swift */; };
 		644714D7306B84B00051E8E5 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644714D6306B84B00051E8E5 /* Assets.swift */; };
 		644714F5306CAE730051E8E5 /* HomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644714F4306CAE610051E8E5 /* HomeTopView.swift */; };
 		644714FC306CEB870051E8E5 /* TodayScheduleListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644714FB306CEB7D0051E8E5 /* TodayScheduleListSection.swift */; };
@@ -20,9 +22,8 @@
 		649D9CE1306D18730070CCA7 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D9CDE306D18730070CCA7 /* AppTab.swift */; };
 		64A93436307555FC00A91CF2 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A93433307555FC00A91CF2 /* AppTabView.swift */; };
 		64A93437307555FC00A91CF2 /* ShukatsuLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A93434307555FC00A91CF2 /* ShukatsuLogApp.swift */; };
-		64A934523075589700A91CF2 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934513075589200A91CF2 /* AppRoute.swift */; };
+		64A934523075589700A91CF2 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934513075589200A91CF2 /* AppRootView.swift */; };
 		64A934543075589D00A91CF2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934533075589A00A91CF2 /* AppRouter.swift */; };
-		64A93457307558D200A91CF2 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A93456307558CD00A91CF2 /* AppRootView.swift */; };
 		64A9346F3077494C00A91CF2 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9346E3077494100A91CF2 /* HomeHeaderView.swift */; };
 		64A934713077495700A91CF2 /* HomeTopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934703077494F00A91CF2 /* HomeTopViewModel.swift */; };
 		64A934733077496400A91CF2 /* HomeTopRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A934723077495C00A91CF2 /* HomeTopRoute.swift */; };
@@ -68,6 +69,8 @@
 
 /* Begin PBXFileReference section */
 		642EE35D306B71B70064E5B8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		64306D403077C3C7001FCF54 /* AppPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPresentation.swift; sourceTree = "<group>"; };
+		64306D423077C4A7001FCF54 /* HomeTopRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopRootView.swift; sourceTree = "<group>"; };
 		644714D6306B84B00051E8E5 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		644714F4306CAE610051E8E5 /* HomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopView.swift; sourceTree = "<group>"; };
 		644714FB306CEB7D0051E8E5 /* TodayScheduleListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayScheduleListSection.swift; sourceTree = "<group>"; };
@@ -80,9 +83,8 @@
 		649D9CDE306D18730070CCA7 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
 		64A93433307555FC00A91CF2 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		64A93434307555FC00A91CF2 /* ShukatsuLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShukatsuLogApp.swift; sourceTree = "<group>"; };
-		64A934513075589200A91CF2 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		64A934513075589200A91CF2 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
 		64A934533075589A00A91CF2 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		64A93456307558CD00A91CF2 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
 		64A9346E3077494100A91CF2 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		64A934703077494F00A91CF2 /* HomeTopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopViewModel.swift; sourceTree = "<group>"; };
 		64A934723077495C00A91CF2 /* HomeTopRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopRoute.swift; sourceTree = "<group>"; };
@@ -148,6 +150,15 @@
 				64C5C564306B838C0072D71A /* swiftgen.yml */,
 				64C5C554306B7B580072D71A /* shukatsulog-app-ios.app */,
 			);
+			sourceTree = "<group>";
+		};
+		64306D3F3077C389001FCF54 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				64306D403077C3C7001FCF54 /* AppPresentation.swift */,
+				649D9CDE306D18730070CCA7 /* AppTab.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		644714D4306B83FD0051E8E5 /* Resources */ = {
@@ -272,6 +283,7 @@
 		64A934283075553E00A91CF2 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				64306D423077C4A7001FCF54 /* HomeTopRootView.swift */,
 				64A934AE307788D000A91CF2 /* HomeTopRouter.swift */,
 				64A934723077495C00A91CF2 /* HomeTopRoute.swift */,
 			);
@@ -537,6 +549,7 @@
 			children = (
 				64A9344D307556D200A91CF2 /* Theme */,
 				64C5C556306B82860072D71A /* Extensions */,
+				64306D3F3077C389001FCF54 /* Navigation */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -567,8 +580,6 @@
 			isa = PBXGroup;
 			children = (
 				64A934533075589A00A91CF2 /* AppRouter.swift */,
-				64A934513075589200A91CF2 /* AppRoute.swift */,
-				649D9CDE306D18730070CCA7 /* AppTab.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -576,8 +587,8 @@
 		64A93455307558B400A91CF2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				64A93456307558CD00A91CF2 /* AppRootView.swift */,
 				64A93433307555FC00A91CF2 /* AppTabView.swift */,
+				64A934513075589200A91CF2 /* AppRootView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -626,7 +637,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2630;
-				LastUpgradeCheck = 2700;
+				LastUpgradeCheck = 2720;
 				TargetAttributes = {
 					000000000000000100000000 = {
 						CreatedOnToolsVersion = 26.3;
@@ -680,6 +691,7 @@
 				64A93436307555FC00A91CF2 /* AppTabView.swift in Sources */,
 				64A934B730778BFC00A91CF2 /* WeeklyScheduleListScreen.swift in Sources */,
 				64A93437307555FC00A91CF2 /* ShukatsuLogApp.swift in Sources */,
+				64306D413077C3C9001FCF54 /* AppPresentation.swift in Sources */,
 				64A934A130776ED000A91CF2 /* MyPageTopViewModel.swift in Sources */,
 				64A93481307749D100A91CF2 /* ScheduleTopScreen.swift in Sources */,
 				64A93483307749DD00A91CF2 /* ScheduleCreateSheet.swift in Sources */,
@@ -695,12 +707,13 @@
 				64A9348F30774A2C00A91CF2 /* SelectionCreateSheet.swift in Sources */,
 				64A9346F3077494C00A91CF2 /* HomeHeaderView.swift in Sources */,
 				64A934753077497500A91CF2 /* CompanyTopScreen.swift in Sources */,
-				64A934523075589700A91CF2 /* AppRoute.swift in Sources */,
+				64A934523075589700A91CF2 /* AppRootView.swift in Sources */,
 				644714F5306CAE730051E8E5 /* HomeTopView.swift in Sources */,
 				64A9347B307749A300A91CF2 /* CompanyHeaderView.swift in Sources */,
 				64A934773077497F00A91CF2 /* CompanyCreateSheet.swift in Sources */,
 				64A9349F30776DA000A91CF2 /* MyPageHeaderView.swift in Sources */,
 				644714FC306CEB870051E8E5 /* TodayScheduleListSection.swift in Sources */,
+				64306D433077C4AE001FCF54 /* HomeTopRootView.swift in Sources */,
 				64A9348B30774A1000A91CF2 /* ScheduleTopRoute.swift in Sources */,
 				64A934713077495700A91CF2 /* HomeTopViewModel.swift in Sources */,
 				64A9349530774A5100A91CF2 /* SelectionTopViewModel.swift in Sources */,
@@ -716,7 +729,6 @@
 				64A934543075589D00A91CF2 /* AppRouter.swift in Sources */,
 				64A93487307749FB00A91CF2 /* ScheduleHeaderView.swift in Sources */,
 				64A9349730774A6400A91CF2 /* SelectionTopRoute.swift in Sources */,
-				64A93457307558D200A91CF2 /* AppRootView.swift in Sources */,
 				64A9349D30776D9300A91CF2 /* ProfileSummarySection.swift in Sources */,
 				64A934733077496400A91CF2 /* HomeTopRoute.swift in Sources */,
 				64A9349130774A3F00A91CF2 /* SelectionProgressSummarySection.swift in Sources */,
@@ -763,6 +775,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QU5MY7WAK3;
 				DRIVERKIT_DEPLOYMENT_TARGET = 27.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -833,6 +846,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QU5MY7WAK3;
 				DRIVERKIT_DEPLOYMENT_TARGET = 27.0;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -865,7 +879,6 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QU5MY7WAK3;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -910,7 +923,6 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QU5MY7WAK3;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
