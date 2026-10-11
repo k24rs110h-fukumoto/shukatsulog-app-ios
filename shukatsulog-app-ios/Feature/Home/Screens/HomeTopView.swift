@@ -8,26 +8,27 @@
 import SwiftUI
 
 struct HomeTopView: View {
+
+    let viewModel: HomeTopViewModel
+
     var body: some View {
-        NavigationStack {
-            content
-                .background(Color(Asset.Color.Background.background.color))
-                .safeAreaInset(edge: .top) {
-                    AppHeaderView()
-                }
-        }
+        content
+            .background(Color(Asset.Color.Background.background.color))
+            .safeAreaInset(edge: .top) {
+                AppHeaderView()
+            }
     }
-    
+
     private var content: some View {
         ScrollView {
             TodayScheduleListSection()
-            
-            HomeTopQuickActionButtonSection()
-                .padding(.top, 8)
-            
+
+            HomeTopQuickActionButtonSection(viewModel: viewModel)
+            .padding(.top, 8)
+
             UpcomingScheduleListSection()
                 .padding(.top, 8)
-            
+
             ToDoListSection()
                 .padding(.top, 8)
                 .padding(.bottom, 8)
@@ -35,7 +36,4 @@ struct HomeTopView: View {
         .padding(.horizontal, 8)
         .scrollIndicators(.hidden)
     }
-    
-    
 }
-
