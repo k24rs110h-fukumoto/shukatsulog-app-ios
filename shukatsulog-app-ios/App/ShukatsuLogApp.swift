@@ -4,11 +4,11 @@ import Playgrounds
 @main struct ShukatsuLogApp: App {
     var body: some Scene {
         WindowGroup {
-            AppTabView()
+            AppRootView()
         }
     }
 }
 
 #Preview {
-    AppTabView()
+    AppRootView()
 }
