@@ -8,6 +8,23 @@
 import SwiftUI
 
 struct TodayScheduleListSection: View {
+    @Environment(HomeTopRouter.self) private var router
+    
+    var body: some View {
+        TodayScheduleListContent(router: router)
+    }
+}
+
+
+private struct TodayScheduleListContent: View {
+    @State private var viewModel: TodayScheduleViewModel
+    
+    init(router: HomeTopRouter) {
+        _viewModel = State(
+            initialValue: TodayScheduleViewModel(router: router)
+        )
+    }
+    
     var body: some View {
         VStack(spacing: 8) {
             todayTaskRow(time: "10:00~11:00", title: "Web面接", compony: "田中研究所")
@@ -30,7 +47,7 @@ struct TodayScheduleListSection: View {
                 }
                 
                 Button {
-                    
+                    viewModel.didTapAddTodaySchedule()
                 } label: {
                     Image(systemName: "plus.circle")
                         .font(.system(size: 32, weight: .light))
@@ -47,7 +64,7 @@ struct TodayScheduleListSection: View {
     
     private func todayTaskRow(time: String, title: String, compony: String) -> some View {
         Button {
-            
+            viewModel.didTapTodaySchedule()
         } label: {
             HStack(alignment: .top) {
                 Text(time)
@@ -102,3 +119,5 @@ struct TodayScheduleListSection: View {
         }
     }
 }
+
+
