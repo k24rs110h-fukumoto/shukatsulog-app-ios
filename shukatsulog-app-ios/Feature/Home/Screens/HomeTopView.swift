@@ -8,33 +8,32 @@
 import SwiftUI
 
 struct HomeTopView: View {
+
+    let viewModel: HomeTopViewModel
+
     var body: some View {
-        NavigationStack {
-            content
-                .background(Color(Asset.Color.Background.background.color))
-                .safeAreaInset(edge: .top) {
-                    AppHeaderView()
-                }
-        }
+        content
+            .background(Color(Asset.Color.Background.background.color))
+            .safeAreaInset(edge: .top) {
+                AppHeaderView()
+            }
     }
-    
+
     private var content: some View {
         ScrollView {
-            TodayScheduleSection()
-            
-            UpcomingScheduleSection()
-            
-            ToDoListSection()
-            
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
-                QuickActionButton(QuickActionData.entryManagement, tapAction: {})
-                QuickActionButton(QuickActionData.companyManagement, tapAction: {})
-                QuickActionButton(QuickActionData.selectionManagement, tapAction: {})
-                QuickActionButton(QuickActionData.interviewAndESPreparation, tapAction: {})
-            }
-        }
-    }
-    
-    
-}
+            TodayScheduleListSection()
 
+            HomeTopQuickActionButtonSection(viewModel: viewModel)
+            .padding(.top, 8)
+
+            UpcomingScheduleListSection()
+                .padding(.top, 8)
+
+            ToDoListSection()
+                .padding(.top, 8)
+                .padding(.bottom, 8)
+        }
+        .padding(.horizontal, 8)
+        .scrollIndicators(.hidden)
+    }
+}

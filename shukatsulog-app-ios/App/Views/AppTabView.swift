@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct AppTabView: View {
-    @State private var selectedTab: AppTab = .home
+    @Binding var selectedTab: AppTab
+
+    let homeRootView: HomeTopRootView
 
     var body: some View {
         VStack(spacing: 0) {
             tabContent
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .frame(
+                    maxWidth: .infinity,
+                    maxHeight: .infinity
+                )
 
             TabBarView(
                 tabs: AppTab.allCases,
@@ -26,19 +31,19 @@ struct AppTabView: View {
     private var tabContent: some View {
         switch selectedTab {
         case .home:
-            HomeTopView()
+            homeRootView
 
         case .company:
-            HomeTopView()
+            CompanyTopScreen()
 
         case .schedule:
-            HomeTopView()
+            ScheduleTopScreen()
 
         case .selection:
-            HomeTopView()
+            SelectionTopScreen()
 
-        case .profile:
-            HomeTopView()
+        case .mypage:
+            MyPageTopScreen()
         }
     }
 }

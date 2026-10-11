@@ -7,9 +7,23 @@
 
 import SwiftUI
 
-struct UpcomingScheduleSection: View {
+struct UpcomingScheduleListSection: View {
+    @Environment(HomeTopRouter.self) private var router
+    
     var body: some View {
-        VStack {
+        UpcomingScheduleListContent(router: router)
+    }
+}
+
+struct UpcomingScheduleListContent: View {
+    @State private var viewModel: UpcomingScheduleViewModel
+    
+    init(router: HomeTopRouter) {
+        _viewModel = State(initialValue: UpcomingScheduleViewModel(router: router))
+    }
+    
+    var body: some View {
+        VStack(spacing: 4) {
             upcommingScheduleRow(date: Calendar.current.date(from: DateComponents(year: 2026, month: 9, day: 20, hour: 16, minute:0))!, title: "1時面接", company: "株式会社田中研究所", status: "面接待機中")
             
             Divider()
@@ -20,22 +34,23 @@ struct UpcomingScheduleSection: View {
             
             upcommingScheduleRow(date: Calendar.current.date(from: DateComponents(year: 2026, month: 9, day: 20, hour: 16, minute:0))!, title: "1時面接", company: "株式会社田中研究所", status: "面接待機中")
         }
+        .padding(.top, 8)
+        .padding(.bottom, 8)
         .padding(.horizontal, 16)
         .background(Color(Asset.Color.Background.card.color))
         .clipShape(RoundedRectangle(cornerRadius: 16))
-        .padding(.horizontal, 16)
-        .padding(.vertical, 8)
     }
     
     private func upcommingScheduleRow(date: Date, title: String, company: String, status: String) -> some View {
         Button {
-            
+            viewModel.didTapUpcomingSchedule()
         } label: {
             HStack(alignment: .top, spacing: 16) {
                 Image(systemName: "building")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
+                    .foregroundStyle(Color(Asset.Color.Brand.primary.color))
                 
                 VStack(alignment: .leading) {
                     Text(company)

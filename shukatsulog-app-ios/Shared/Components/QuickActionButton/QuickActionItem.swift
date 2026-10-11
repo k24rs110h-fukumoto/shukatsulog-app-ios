@@ -10,6 +10,4 @@ import SwiftUI
 struct QuickActionItem {
     let title: String
     let image: String
-    let description: String
-    let color: Color
 }

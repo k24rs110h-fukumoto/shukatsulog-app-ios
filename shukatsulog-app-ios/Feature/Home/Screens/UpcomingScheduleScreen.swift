@@ -1,5 +1,5 @@
 //
-//  CompanyTopScreen.swift
+//  UpcomingScheduleScreen.swift
 //  shukatsulog-app-ios
 //
 //  Created by Haruto Fukumoto on 2026/10/08.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct CompanyTopScreen: View {
+struct UpcomingScheduleScreen: View {
     var body: some View {
-        Text("CompanyTop")
+        Text("Upcoming Schedule")
     }
 }

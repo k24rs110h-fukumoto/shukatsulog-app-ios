@@ -7,9 +7,26 @@
 
 import SwiftUI
 
-struct TodayScheduleSection: View {
+struct TodayScheduleListSection: View {
+    @Environment(HomeTopRouter.self) private var router
+    
     var body: some View {
-        VStack {
+        TodayScheduleListContent(router: router)
+    }
+}
+
+
+private struct TodayScheduleListContent: View {
+    @State private var viewModel: TodayScheduleViewModel
+    
+    init(router: HomeTopRouter) {
+        _viewModel = State(
+            initialValue: TodayScheduleViewModel(router: router)
+        )
+    }
+    
+    var body: some View {
+        VStack(spacing: 8) {
             todayTaskRow(time: "10:00~11:00", title: "Web面接", compony: "田中研究所")
             
             Divider()
@@ -19,17 +36,35 @@ struct TodayScheduleSection: View {
             Divider()
             
             todayTaskRow(time: "10:00~11:00", title: "Web面接", compony: "田中研究所")
+            
+            HStack(spacing: 16) {
+                Button {
+                    
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                        .font(.system(size: 32, weight: .light))
+                        .foregroundStyle(Color(Asset.Color.Text.textSecondary.color))
+                }
+                
+                Button {
+                    viewModel.didTapAddTodaySchedule()
+                } label: {
+                    Image(systemName: "plus.circle")
+                        .font(.system(size: 32, weight: .light))
+                        .foregroundStyle(Color(Asset.Color.Text.textSecondary.color))
+                }
+            }
         }
+        .padding(.top, 12)
+        .padding(.bottom, 8)
         .padding(.horizontal, 16)
         .background(Color(Asset.Color.Background.card.color))
         .clipShape(RoundedRectangle(cornerRadius: 16))
-        .padding(.horizontal, 16)
-        .padding(.vertical, 8)
     }
     
     private func todayTaskRow(time: String, title: String, compony: String) -> some View {
         Button {
-            
+            viewModel.didTapTodaySchedule()
         } label: {
             HStack(alignment: .top) {
                 Text(time)
@@ -38,6 +73,12 @@ struct TodayScheduleSection: View {
                     .monospacedDigit()
                     .foregroundStyle(Color(Asset.Color.Text.textPrimary.color))
                     .frame(width: 85, alignment: .leading)
+                
+                VStack {
+                    Circle()
+                        .frame(width: 24, height: 24)
+                        .foregroundStyle(Color(Asset.Color.Brand.primary.color))
+                }
                 
                 VStack(alignment: .leading, spacing: 8) {
                     HStack {
@@ -64,8 +105,19 @@ struct TodayScheduleSection: View {
                     .foregroundStyle(.secondary)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
+                
+                VStack {
+                    Spacer()
+                    
+                    Image(systemName: "chevron.right")
+                        .font(.caption)
+                        .foregroundStyle(Color(Asset.Color.Text.textSecondary.color))
+                    
+                    Spacer()
+                }
             }
-            .padding(.vertical, 12)
         }
     }
 }
+
+

@@ -9,28 +9,33 @@ import SwiftUI
 
 struct ToDoListSection: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 12) {
             toDoListRow(title: "株式会社田中研究所ES提出", limitDate: "今日")
             toDoListRow(title: "株式会社田中研究所ES提出", limitDate: "今日")
             toDoListRow(title: "株式会社田中研究所ES提出", limitDate: "今日")
             toDoListRow(title: "株式会社田中研究所ES提出", limitDate: "今日")
         }
+        .padding(.top, 12)
+        .padding(.bottom, 12)
         .padding(.horizontal, 16)
         .background(Color(Asset.Color.Background.card.color))
         .clipShape(RoundedRectangle(cornerRadius: 16))
-        .padding(.horizontal, 16)
-        .padding(.vertical, 8)
     }
     
     private func toDoListRow(title: String, limitDate: String) -> some View {
         HStack {
-            Circle()
-                .foregroundStyle(.gray)
-                .frame(width: 24, height: 24)
-            
-            Text(title)
-                .font(.subheadline)
-                .fontWeight(.semibold)
+            Button {
+                
+            } label: {
+                Image(systemName: "circle")
+                    .foregroundStyle(.gray)
+                    .font(.system(size: 24, weight: .light))
+                
+                Text(title)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(Color(Asset.Color.Text.textPrimary.color))
+            }
             
             Spacer()
             
@@ -43,6 +48,5 @@ struct ToDoListSection: View {
                 .background(.red)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
         }
-        .padding(.vertical, 12)
     }
 }
