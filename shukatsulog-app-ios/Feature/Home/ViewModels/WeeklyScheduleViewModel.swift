@@ -5,3 +5,17 @@
 //  Created by Haruto Fukumoto on 2026/10/08.
 //
 
+import SwiftUI
+
+@MainActor
+final class WeeklyScheduleViewModel {
+    private let router: HomeTopRouter
+    
+    init(router: HomeTopRouter) {
+        self.router = router
+    }
+    
+    func navigateToWeeklySchedule() {
+        router.navigateToWeeklySchedule()
+    }
+}
